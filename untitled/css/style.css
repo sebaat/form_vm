@@ -41,7 +41,7 @@ input[type=text], textarea, input[type=password], select, option {
     background-color: #4CAF50;
 }
 
-.container {
+.container,.network-container {
     padding: 16px;
 }
 
@@ -95,15 +95,15 @@ input[type=text], textarea, input[type=password], select, option {
 }
 
 
-/* Style the tab */
-.tab-vm {
+/* Style the tabs */
+.tab-vm, tab-network {
     overflow: hidden;
     border: 1px solid #ccc;
     background-color: #f1f1f1;
 }
 
 /* Style the buttons that are used to open the tab content */
-.tab-vm button {
+.tab-vm button, .tab-network button {
     background-color: inherit;
     float: left;
     border: none;
@@ -111,15 +111,16 @@ input[type=text], textarea, input[type=password], select, option {
     cursor: pointer;
     padding: 14px 16px;
     transition: 0.3s;
+    font-size: 17px;
 }
 
 /* Change background color of buttons on hover */
-.tab-vm button:hover {
+.tab-vm button:hover, .tab-network button:hover {
     background-color: #ddd;
 }
 
 /* Create an active/current tablink class */
-.tab-vm button.active-vm {
+.tab-vm button.active-vm, .tab-network button.active-network {
     background-color: #ccc;
 }
 
@@ -132,5 +133,14 @@ input[type=text], textarea, input[type=password], select, option {
     scroll-behavior: smooth;
     overflow-y: auto;
     height: 500px;
+}
+
+.tabcontent-network {
+    display: none;
+    padding: 12px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+    /*scroll-behavior: smooth;*/
+    /*overflow-y: auto;*/
 }
 

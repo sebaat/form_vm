@@ -51,37 +51,31 @@ function defaultContent() {
     <label><b>Network</b></label>
     <button>Add</button>
     <div class="network-container">
-        <div id="tab-network" class="tab-network">
-            <button class="tablinks-network" id="defaultOpen" onclick="openCity(event, 'London','network')">London</button>
+        <div id="tab-network" class="tab-network" >
+            <button class="tablinks-network" onclick="openCity(event, 'network1','network')">network1</button>
         </div>
 
-        <!-- Tab content -->
-        <div id="London" class="tabcontent-vm ">
-            <label for="uname_1"><b>Username</b></label>
-            <input type="text" placeholder="Enter Username" id="uname_1" name="uname" required>
-            <label for="psw_1"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" id="psw_1" name="psw" required>
+        <!-- newtwork Tab content -->
+        <div id="network1" class="tabcontent-network ">
+            <div>
+                <select>
+                    <option>public network</option>
+                    <option>privet network</option>
+                </select>
+                <select>
+                    <option>dhcp</option>
+                    <option>static</option>
+                </select>
+                <input type="text" placeholder="Enter the ip Address" name="uname" required>
+            </div>
         </div>
-        
-        
-        
-        
     </div>
-    <select>
-        <option>public network</option>
-        <option>privet network</option>
-    </select>
-    <select>
-        <option>dhcp</option>
-        <option>static</option>
-    </select>
-    <input type="text" placeholder="Enter the ip Address"  name="uname" required>
 
     <label><b>Docker Provisioner</b></label>
-    <input type="text" placeholder="Enter Docker Image Name"  name="uname" required>
-    <input type="text" placeholder="Enter Container Name"  name="uname" required>
-    <input type="text" placeholder="Enter Docker Command"  name="uname" required>
-    <input type="text" placeholder="Enter Docker Args"  name="uname" required>
+    <input type="text" placeholder="Enter Docker Image Name" name="uname" required>
+    <input type="text" placeholder="Enter Container Name" name="uname" required>
+    <input type="text" placeholder="Enter Docker Command" name="uname" required>
+    <input type="text" placeholder="Enter Docker Args" name="uname" required>
     <label><b>Script Provisioner</b></label>
     <textarea rows="8" style="resize: none">#!/bin/bash
 
