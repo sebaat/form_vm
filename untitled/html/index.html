@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Environment Creation</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+
+<h2>Create Virtual Environment</h2>
+
+<button class="button1" onclick="createButton()" style="width:auto;">Create</button>
+
+<div id="id01" class="modal">
+
+    <form class="modal-content animate" method="post">
+
+        <div id="container" class="container">
+
+            <div id="tab-vm" class="tab-vm">
+                <button class="tablinks-vm" id="defaultOpen" onclick="openCity(event, 'London','vm')">London</button>
+            </div>
+
+            <!-- Tab content -->
+            <div id="London" class="tabcontent-vm ">
+                <label for="uname_1"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" id="uname_1" name="uname" required>
+                <label for="psw_1"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" id="psw_1" name="psw" required>
+            </div>
+        </div>
+
+        <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                    class="button1 cancelbtn">
+                Cancel
+            </button>
+            <button type="button" onclick="addTab()" class="button1 addbtn">
+                Add
+            </button>
+        </div>
+    </form>
+</div>
+<script src="../js/script.js"></script>
+</body>
+</html>
