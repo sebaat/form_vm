@@ -3,6 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/untitled/untitled.iml" filepath="$PROJECT_DIR$/untitled/untitled.iml" />
+      <module fileurl="file://$PROJECT_DIR$/with_oop/with_oop.iml" filepath="$PROJECT_DIR$/with_oop/with_oop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/with_poo/with_poo.iml" filepath="$PROJECT_DIR$/with_poo/with_poo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/with_poo2/with_poo2.iml" filepath="$PROJECT_DIR$/with_poo2/with_poo2.iml" />
     </modules>
   </component>
 </project>
