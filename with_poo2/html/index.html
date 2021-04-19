@@ -13,9 +13,14 @@
 
 <div id="id01" class="modal">
 
-    <form id="form-id" class="modal-content animeate" method="post"> </form>
+    <form id="form-id" name="yourForm" class="modal-content animeate"  method="POST">
+                <input type="text" style="display: none" placeholder="Enter the ip Address"  required>
+        <!--        <input type="submit" value="submit"/>-->
+    </form>
+
 
 </div>
+
 
 <script>
     function createButton() {
@@ -31,6 +36,7 @@
 <script src="../js/TabVM.js"></script>
 <script src="../js/TabNetwork.js"></script>
 <script src="../js/utilitise.js"></script>
+<script src="../js/TabDocker.js"></script>
 
 </body>
 </html>

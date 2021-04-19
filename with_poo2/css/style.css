@@ -44,6 +44,7 @@ select {
 .addbtn {
     width: auto;
     padding: 10px 18px;
+    margin-left: 5px;
     float: right;
     background-color: #4CAF50;
 }
@@ -52,7 +53,7 @@ select {
     padding: 16px;
 }
 
-.network-container {
+.network-container, .docker-container {
     /*padding-top: 16px;*/
     margin-top: 8px;
     margin-bottom: 8px;
@@ -108,14 +109,14 @@ select {
 
 
 /* Style the tabs */
-.tab-vm, .tab-network {
+.tab-vm, .tab-network, .tab-docker {
     overflow: hidden;
     border: 1px solid #ccc;
     background-color: #f1f1f1;
 }
 
 /* Style the buttons that are used to open the tab content */
-.tab-vm button, .tab-network button {
+.tab-vm button, .tab-network button, .tab-docker button {
     background-color: inherit;
     float: left;
     border: none;
@@ -127,12 +128,12 @@ select {
 }
 
 /* Change background color of buttons on hover */
-.tab-vm button:hover, .tab-network button:hover {
+.tab-vm button:hover, .tab-network button:hover, .tab-docker button:hover {
     background-color: #ddd;
 }
 
 /* Create an active/current tablink class */
-.tab-vm button.active, .tab-network button.active{
+.tab-vm button.active, .tab-network button.active, .tab-docker button.active{
     background-color: #ccc;
 }
 

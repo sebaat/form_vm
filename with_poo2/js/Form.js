@@ -14,6 +14,7 @@ function Form(formNode, onClose) {
 </div>  
 <div class="container" style="background-color:#f1f1f1">
     <button id="closeButton" class="button1 cancelbtn">Cancel</button>
+    <button type="submit"  class="button1 addbtn">Submit</button>
     <button id="addButton" class="button1 addbtn">Add</button>
 </div>`;
 

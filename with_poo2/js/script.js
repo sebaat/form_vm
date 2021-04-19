@@ -33,9 +33,9 @@
 // function vmDefaultContent() {
 //     let nodes = htmlToElements(`<div id="VM${tabVmNumber}" class="tabcontent-vm ">
 //     <label><b>Virtual Machine</b></label>
-//     <input type="text" placeholder="Enter Virtual Machine ID" name="uname" required>
-//     <input type="text" placeholder="Enter Vagrant Box Name" name="uname" required>
-//     <input type="password" placeholder="Enter Password" name="uname" required>
+//     <input type="text" placeholder="Enter Virtual Machine ID" name="uname" >
+//     <input type="text" placeholder="Enter Vagrant Box Name" name="uname" >
+//     <input type="password" placeholder="Enter Password" name="uname" >
 //
 //     <label><b>Network</b></label>
 //     <button type="button" onclick="addNetworkTab(1)">Add</button>
@@ -54,15 +54,15 @@
 //                     <option>dhcp</option>
 //                     <option>static</option>
 //                 </select>
-//                 <input type="text" placeholder="Enter the ip Address" name="uname" required>
+//                 <input type="text" placeholder="Enter the ip Address" name="uname" >
 //         </div>
 //     </div>
 //
 //     <div><label><b>Docker Provisioner</b></label>
-//         <input type="text" placeholder="Enter Docker Image Name" name="uname" required>
-//         <input type="text" placeholder="Enter Container Name" name="uname" required>
-//         <input type="text" placeholder="Enter Docker Command" name="uname" required>
-//         <input type="text" placeholder="Enter Docker Args" name="uname" required>
+//         <input type="text" placeholder="Enter Docker Image Name" name="uname" >
+//         <input type="text" placeholder="Enter Container Name" name="uname" >
+//         <input type="text" placeholder="Enter Docker Command" name="uname" >
+//         <input type="text" placeholder="Enter Docker Args" name="uname" >
 //     </div>
 //     <label><b>Script Provisioner</b></label>
 //     <textarea rows="8" style="resize: none">#!/bin/bash
@@ -117,7 +117,7 @@
 //         <option>dhcp</option>
 //         <option>static</option>
 //     </select>
-//     <input type="text" placeholder="Enter the ip Address" name="uname" required>
+//     <input type="text" placeholder="Enter the ip Address" name="uname" >
 // </div>`);
 //
 //     return nodes

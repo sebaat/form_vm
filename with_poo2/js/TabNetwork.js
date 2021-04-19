@@ -26,7 +26,7 @@ function TabNetwork(number) {
         <option>dhcp</option>
         <option>static</option>
     </select>
-    <input type="text" placeholder="Enter the ip Address" name="uname" required>
+    <input type="text" placeholder="Enter the ip Address"  > <!--required-->
 </div>`;
     }
 
