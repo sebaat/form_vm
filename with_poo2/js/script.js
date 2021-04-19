@@ -12,7 +12,7 @@
 //     let buttonName = "Network" + tabNetworkNumber;
 //     let textNode = document.createTextNode(buttonName);
 //     tab.appendChild(textNode);
-//     tab.className = "tablinks-network";
+//     tab.className = "tabLinks-network";
 //     tab.onclick = (event) => {
 //         openCity(event, buttonName, "network");
 //     };
@@ -41,11 +41,11 @@
 //     <button type="button" onclick="addNetworkTab(1)">Add</button>
 //     <div id="network-container${tabVmNumber}" class="network-container">
 //         <div id="tab-network" class="tab-network">
-//            <button class="tablinks-network" onclick="openCity(event, 'network1','network')">network1</button>
+//            <button class="tabLinks-network" onclick="openCity(event, 'network1','network')">network1</button>
 //         </div>
 //
 //         <!-- newtwork Tab content -->
-//         <div id="network1" class="tabcontent-network ">
+//         <div id="network1" class="tabContent-network ">
 //                 <select>
 //                     <option>public network</option>
 //                     <option>privet network</option>
@@ -108,7 +108,7 @@
 //  */
 // function NetworkDefaultContent() {
 //
-//     let nodes = htmlToElements(`<div id="Network${tabNetworkNumber}" class="tabcontent-network ">
+//     let nodes = htmlToElements(`<div id="Network${tabNetworkNumber}" class="tabContent-network ">
 //     <select>
 //         <option>public network</option>
 //         <option>privet network</option>

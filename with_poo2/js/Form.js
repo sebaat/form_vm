@@ -11,8 +11,7 @@ function Form(formNode, onClose) {
     <div id="tab-vm" class="tab-vm"></div>
     <!-- Tab content -->
 
-</div>
-
+</div>  
 <div class="container" style="background-color:#f1f1f1">
     <button id="closeButton" class="button1 cancelbtn">Cancel</button>
     <button id="addButton" class="button1 addbtn">Add</button>
@@ -31,7 +30,10 @@ function Form(formNode, onClose) {
     };
 
     this.closeForm = function () {
-        this.formNode.childNodes.forEach(value => value.remove());
+        for (let i = 0; i < this.formNode.childNodes.length; i++) {
+            this.formNode.childNodes[i].remove();
+            i--;
+        }
         this.onClose();
     };
 

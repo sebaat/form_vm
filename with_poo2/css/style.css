@@ -3,13 +3,20 @@ body {
 }
 
 /* Full-width input fields */
-input[type=text], textarea, input[type=password], select, option {
+input[type=text], textarea, input[type=password], select {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
+}
+option {
+    margin: 12px;
+}
+
+select {
+    background-color: white;
 }
 
 /* Set a style for all buttons */
@@ -41,10 +48,15 @@ input[type=text], textarea, input[type=password], select, option {
     background-color: #4CAF50;
 }
 
-.container,.network-container {
+.container {
     padding: 16px;
 }
 
+.network-container {
+    /*padding-top: 16px;*/
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
@@ -57,7 +69,7 @@ input[type=text], textarea, input[type=password], select, option {
     /*overflow: auto; !* Enable scroll if needed *!*/
     background-color: rgb(0, 0, 0); /* Fallback color */
     background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
-    padding-top: 60px;
+    /*padding-top: 60px;*/
     /*scroll-behavior: smooth;*/
 }
 
@@ -67,7 +79,7 @@ input[type=text], textarea, input[type=password], select, option {
     margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
     border: 1px solid #888;
     width: 80%; /* Could be more or less, depending on screen size */
-    /*height: 40%;*/
+    /*height: 300px;*/
 }
 
 /* Add Zoom Animation */
@@ -111,7 +123,7 @@ input[type=text], textarea, input[type=password], select, option {
     cursor: pointer;
     padding: 14px 16px;
     transition: 0.3s;
-    font-size: 17px;
+    /*font-size: 17px;*/
 }
 
 /* Change background color of buttons on hover */
@@ -120,7 +132,7 @@ input[type=text], textarea, input[type=password], select, option {
 }
 
 /* Create an active/current tablink class */
-.tab-vm button.active-vm, .tab-network button.active-network {
+.tab-vm button.active, .tab-network button.active{
     background-color: #ccc;
 }
 
@@ -132,15 +144,15 @@ input[type=text], textarea, input[type=password], select, option {
     border-top: none;
     scroll-behavior: smooth;
     overflow-y: auto;
-    height: 500px;
+    height: 400px;
 }
 
-.tabcontent-network {
-    display: none;
-    padding: 12px 12px;
-    border: 1px solid #ccc;
-    border-top: none;
-    /*scroll-behavior: smooth;*/
-    /*overflow-y: auto;*/
-}
+/*.tabContent-network {*/
+/*    display: none;*/
+/*    padding: 12px 12px;*/
+/*    border: 1px solid #ccc;*/
+/*    border-top: none;*/
+/*    !*scroll-behavior: smooth;*!*/
+/*    !*overflow-y: auto;*!*/
+/*}*/
 

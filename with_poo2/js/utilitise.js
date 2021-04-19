@@ -17,8 +17,9 @@ function openTab(evt, TabName, type) {
     }
     tabLinks = document.getElementsByClassName("tabLinks" + "-" + type);
     for (i = 0; i < tabLinks.length; i++) {
-        tabLinks[i].className = tabLinks[i].className.replace(" active-" + type, "");
+        tabLinks[i].className = tabLinks[i].className.replace(" active", "");
+        // tabLinks[i].className = tabLinks[i].className.replace(" active-" + type, "");
     }
     document.getElementById(TabName).style.display = "block";
-    evt.currentTarget.className += " active-" + type;
+    evt.currentTarget.className += " active";
 }
